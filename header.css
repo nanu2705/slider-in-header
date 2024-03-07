@@ -1,0 +1,271 @@
+
+body{
+    margin: 0;
+}
+    .header{
+        display: flex;
+        justify-content: space-between;
+        background-color: rgba(0, 0, 255, 0.5);
+        color: white;
+        margin: 0px;
+        height: 90px;
+        align-items: center;
+      
+        
+        
+    }
+    .left{
+        display: flex;
+        justify-content: space-between;
+        padding: 2px;
+        gap: 10px;
+        margin: 0px 50px;
+        align-items: center;
+       
+    }
+    
+    .center{
+        align-items: center;
+        margin: 0px;
+    }
+ 
+    span{
+        border-right: 2px solid white;
+        padding:0 10px 0 0;
+
+    }
+    .right{
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px 50px;
+        gap: 20px;
+       
+
+
+        .hover{
+          cursor: pointer;
+        }
+
+        
+    } 
+    .list{
+            display: none;
+            position: absolute;
+            top: 50px;
+            list-style: none;
+            background-color: rgba(0, 0, 255, 0.404);
+            gap: 10px;
+            animation: name 1s;
+            border: 1px solid black;
+           
+            li{
+                padding: 5px 19px;
+                cursor: pointer;
+                
+                &:hover{
+                   background-color: rgba(0, 0, 255, 0.623);
+                }
+            }
+        }
+   
+    
+    .buttons{
+        display: flex;
+        justify-content: center;
+        height: 100px;
+        margin-top: 50px;
+        gap: 50px;
+      
+        
+
+        button{
+            height: 50px;
+            width: 90px;
+            border: none;
+            border-radius: 5px ;
+            background-color: plum;
+            cursor: pointer;
+        }
+    }
+
+    .image{
+        display: flex;
+        justify-content: center;
+        height: 300px;
+       
+    }
+
+    @keyframes name {
+        0%{transform: scale(0);}
+        100%{transform: scale(1);}
+    }
+
+    .header1{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 20px ;
+        background-color: white;
+       
+
+        .details{
+            display: flex;
+            gap: 50px;
+            position: relative;
+            cursor: pointer;
+
+           .hover {
+
+               
+                &:hover{
+                    color: rgba(218, 165, 32, 0.616);
+                }
+
+                &:hover .list{
+                    color: black;
+                }
+            }
+
+            li{
+                background-color: white;
+               
+             
+
+                &:hover{
+                    background-color: rgba(137, 43, 226, 0.637);
+                    color: white;
+                }
+            }
+        }
+
+        .list{
+            position: absolute;
+            top: 20px;
+            z-index: 1;
+        }
+    }
+  
+    .image-container{
+        position: relative;
+        img{
+        display: none;
+        }
+        .active{
+        display: block;
+    }
+
+     img{
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    width: auto;
+    height: 380px;
+    width: 750px;
+    display: none;
+
+    }
+}
+
+  .container{ 
+   background-color: #b99a9a;
+   width: 800px;
+   height: 400px; 
+   position: relative;
+   top: 20px;
+   left: 300px; 
+   border-radius: 5px;
+   padding: 20px;
+   box-shadow: 0 15px 30px rgba(0,0,0,0.3); 
+  }
+
+
+   #prev,#next{
+   height: 40px;
+   width: 40px;
+   position: absolute;
+   background-color: #6490b3;
+   color: #ffffff;
+   margin: auto;
+   top: 0; 
+   bottom: 0;
+   border: none;
+   border-radius: 3px;
+   font-size: 18px;
+   font-weight: bolder;
+
+   }
+
+  #prev{ 
+  left: 300px;
+  top: 200px;
+ }
+
+  #next{
+  right: 210px;
+  top: 200px;
+   } 
+
+   .fooditems{
+    display: flex;
+    justify-content: center;
+    margin:70px 0 ;
+    gap: 90px;
+    padding-top: 20px;
+   
+    
+    button{
+        border: none;
+        border-radius: 8px;
+        background-color: rgba(221, 160, 221, 0.808);
+        height: 60px;
+        width: 120px;
+        color: rgb(202, 27, 202);
+        border-bottom: 5px solid rgb(224, 31, 224);
+        cursor: pointer;
+        &:hover{
+            color: rgba(97, 5, 100, 0.986);
+        }
+        
+    }
+   }
+   .foodimages{
+    display: grid;
+    row-gap: 40px;
+    
+    justify-content: center;
+    grid-template-columns: auto auto auto auto;
+    
+   
+
+   #active{
+    display: block;
+   }
+
+   .images{
+    display: none;
+        
+   }
+  span{
+    font-size: large;
+    
+} 
+
+    
+ img{
+        
+border: 1px solid black;
+text-align: center;
+font-size: 30px;
+height: 200px;
+width: 200px;
+background-color: blueviolet;
+
+
+
+}
+
+}
+
+

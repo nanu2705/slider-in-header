@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+         
+   
+<body>
+        <div class="header">
+            <div class="left">
+                
+                <span>follow us</span>
+               <span> <i class="fa-brands fa-facebook"></i></span>
+                <span><i class="fa-brands fa-twitter"></i></span>   
+                     <span><i class="fa-brands fa-instagram"></i></span>
+           </div>
+            <div class="center">
+                <h2>FOOD CAFE</h2>
+            </div>
+            <div class="right">
+                <span><i class="fa-solid fa-earth-americas"></i></span>
+                    <span ><div class="hover" onclick="hover()">English <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        <div class="list" id="list">
+                            <li>English</li>
+                            <li>Italian</li>
+                            <li>France</li>
+                            <li>Spanish</li>
+                            <li>Poland</li>
+                            <li>German</li>
+                         </div> 
+                    </div>
+                </span>
+                   <h3>Login</h3>
+             </div>  
+        </div>
+
+
+        <div class="header1">
+            <div class="details">
+               <span ><div class="hover" onclick="hover1()">Home 
+                  <div class="list" id="list1">
+                            <li>Home1</li>
+                            <li>Home2</li>
+                            <li>Home3</li>
+                         </div> 
+                    </div>
+                </span>
+                
+
+                <span ><div class="hover" onclick="hover2()">About Us 
+                    <div class="list" id="list2">
+                              <li>Who We Are</li>
+                              <li>Team</li>
+                              <li>FAQ</li>
+                              
+                           </div> 
+                      </div>
+                  </span>
+                  
+
+                  <span ><div class="hover" onclick="hover3()">Services
+                    <div class="list" id="list3">
+                              <li>Service1</li>
+                              <li>Service2</li>
+                              <li>Service3</li>
+                           </div> 
+                      </div>
+                  </span>
+                  
+
+                  <span ><div class="hover" onclick="hover4()">Gallery 
+                    <div class="list" id="list4">
+                              <li>Gallery1</li>
+                              <li>Gallery2</li>
+                              <li>Gallery3</li>
+                           </div> 
+                      </div>
+                  </span>
+
+                  <span ><div class="hover" onclick="hover5()">Contact 
+                    <div class="list" id="list5">
+                              <li>Contact1</li>
+                              <li>Contact2</li>
+                              <li>Contact3</li>
+                           </div> 
+                      </div>
+                  </span>
+                  
+        </div>
+    </div>
+
+          <div class="container">
+                <div class="image-container" >
+
+           <img src="./banner.png.webp"   id="content1" class="active">
+           <img src="./banner1.webp"   id="content2">
+           <img src="./banner2.webp"   id="content3">
+                 </div>
+         </div>
+
+         <button id="prev" onclick="prev()">&lt</button>
+         <button id="next" onclick="next()">&gt</button>
+
+
+        <div class="buttons">
+         <button onclick="home()">Home</button>
+         <button onclick="service()">Service</button>
+         <button onclick="contact()">Contact</button>
+         
+        </div>
+
+        <div class="image">
+            <img src="./image1.jpg"  id="demo">
+        </div>
+        
+        <div class="fooditems">
+            <button onclick="coffee()">Coffee</button>
+            <button onclick="cold()">Cold Drink</button>
+            <button onclick="fastfood()">Fast food</button>
+            <button onclick="tea()">Tea</button>
+            <button onclick="all()">All</button>
+        </div>
+
+        <div class="foodimages">
+            
+                <div class="images" id="active">
+             <img src="./cappuccino.jpg" >
+             <span>cappuccino</span>
+             <img src="./espresso.jpg" >
+             <span>Espresso</span>
+             <img src="./caffe latte.jpg" >
+             <span>Caffe Latte</span>
+             <img src="./cold brew.jpg" >
+             <span>Cold Brew</span>
+                 </div>
+            
+           
+                <div class="images" id="cold">
+             <img src="./sprite.jpg" >
+             <span>Sprite</span>
+             <img src="./thumbs up.jpg" >
+             <span>Thumbs Up</span>
+             <img src="./pepsi.jpg" >
+             <span>Pepsi</span>
+             <img src="./mirinda.jpg" >
+             <span>Mirinda</span>
+                  </div>
+            
+           
+                <div class="images" id="fastfood">
+             <img src="./kfc.avif" >
+             <span>KFC</span>
+             <img src="./vadapav.jpg" >
+             <span>Vadapav</span>
+             <img src="./pizza.jpg" >
+             <span>Pizza</span>
+             <img src="./taco.jpg" >
+             <span>Taco</span>
+            </div>
+            
+           
+                <div class="images" id="tea">
+             <img src="./black tea.jpg" >
+             <span>Black Tea</span>
+             <img src="./green tea.jpg" >
+             <span>Green Tea</span>
+             <img src="./herbal yea.webp" >
+             <span>Herbal Tea</span>
+             <img src="./oolong tea.jpg" >
+             <span>Oolong Tea</span>
+            </div>
+      
+
+        </div>
+</body>
+
+<script>
+    function home(){
+          document.getElementById("demo").src="./image1.jpg";
+     }
+     function service(){
+          document.getElementById("demo").src="./image3.jpg";
+     }
+     function contact(){
+          document.getElementById("demo").src="./image4.jpg";
+     }
+     
+    function hover(){
+
+        if( document.getElementById('list').style.display!=='block'){
+     document.getElementById('list').style.display='block';
+        }
+        else{
+            document.getElementById('list').style.display='none';
+        }
+    }
+
+    function hover1(){
+
+        if( document.getElementById('list1').style.display!=='block'){
+            document.getElementById('list1').style.display='block';
+            document.getElementById('list2').style.display='none';
+            document.getElementById('list3').style.display='none';
+            document.getElementById('list4').style.display='none';
+            document.getElementById('list5').style.display='none';
+
+         }
+          else{
+            document.getElementById('list1').style.display='none';
+         }
+    }
+
+    function hover2(){
+
+if( document.getElementById('list2').style.display!=='block'){
+    document.getElementById('list2').style.display='block';
+    document.getElementById('list1').style.display='none';
+    document.getElementById('list3').style.display='none';
+    document.getElementById('list4').style.display='none';
+    document.getElementById('list5').style.display='none';
+ }
+  else{
+    document.getElementById('list2').style.display='none';
+ }
+}
+
+function hover3(){
+
+if( document.getElementById('list3').style.display!=='block'){
+    document.getElementById('list3').style.display='block';
+    document.getElementById('list2').style.display='none';
+    document.getElementById('list1').style.display='none';
+    document.getElementById('list4').style.display='none';
+    document.getElementById('list5').style.display='none';
+ }
+  else{
+    document.getElementById('list3').style.display='none';
+ }
+}
+
+function hover4(){
+
+if( document.getElementById('list4').style.display!=='block'){
+    document.getElementById('list4').style.display='block';
+    document.getElementById('list1').style.display='none';
+    document.getElementById('list2').style.display='none';
+    document.getElementById('list3').style.display='none';
+    document.getElementById('list5').style.display='none';
+ }
+  else{
+    document.getElementById('list4').style.display='none';
+ }
+}
+
+function hover5(){
+
+if( document.getElementById('list5').style.display!=='block'){
+    document.getElementById('list5').style.display='block';
+    document.getElementById('list1').style.display='none';
+    document.getElementById('list2').style.display='none';
+    document.getElementById('list3').style.display='none';
+    document.getElementById('list4').style.display='none';
+ }
+  else{
+    document.getElementById('list5').style.display='none';
+ }
+}
+
+    const images= document.querySelectorAll(".image-container img");
+    let i = 0; 
+     let j = images.length; 
+     function next(){
+document.getElementById("content" + (i+1)).style.display="none"
+
+i = ( j + i + 1) % j;  
+document.getElementById("content" + (i+1)).style.display="block"   
+} 
+
+function prev(){
+document.getElementById("content" + (i+1)).style.display="none"
+i = (j + i - 1) % j;
+    document.getElementById("content" + (i+1)).style.display="block"
+}
+
+function coffee(){
+
+if( document.getElementById('active').style.display!=='block'){
+    document.getElementById('active').style.display='block';
+    document.getElementById('cold').style.display='none';
+    document.getElementById('fastfood').style.display='none';
+    document.getElementById('tea').style.display='none';
+    document.getElementById('all').style.display='none';
+    
+
+ }
+ 
+}
+function cold(){
+
+if( document.getElementById('cold').style.display!=='block'){
+    document.getElementById('cold').style.display='block';
+    document.getElementById('active').style.display='none';
+    document.getElementById('fastfood').style.display='none';
+    document.getElementById('tea').style.display='none';
+    document.getElementById('all').style.display='none';
+    
+
+ }
+  else{
+    document.getElementById('cold').style.display='none';
+ }
+}
+function fastfood(){
+
+if( document.getElementById('fastfood').style.display!=='block'){
+    document.getElementById('fastfood').style.display='block';
+    document.getElementById('cold').style.display='none';
+    document.getElementById('active').style.display='none';
+    document.getElementById('tea').style.display='none';
+    document.getElementById('all').style.display='none';
+    
+
+ }
+
+}
+function tea(){
+
+if( document.getElementById('tea').style.display!=='block'){
+    document.getElementById('tea').style.display='block';
+    document.getElementById('cold').style.display='none';
+    document.getElementById('fastfood').style.display='none';
+    document.getElementById('active').style.display='none';
+    document.getElementById('all').style.display='none';
+    
+
+ }
+ 
+}
+function all(){
+    document.getElementById('cold').style.display='block';
+    document.getElementById('fastfood').style.display='block';
+    document.getElementById('tea').style.display='block';
+    document.getElementById('active').style.display='block';
+    }
+</script>
+</html>
